@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Album</title>
+</head>
+<body>
+
+<!-- ページ1 -->
+<div id="page1" class="page">
+    <div class="album-page">
+    <div class="message-frame">
+        <h1>ふなっしー、京花さんへ</h1>
+    <p class="subtitle">
+        お祝いメッセージカード
+    </p>
+        <p>
+            ご出産おめでとうございます。<br><br>
+            大学時代を一緒に過ごした仲間として、毎週の様に電話をさせてもらえてる親友として、辛かった時に支えてもらった恩人として、人生においてこの上ない幸せであろう子供を授かったことに心から祝福の気持ちです。<br>
+            水緒ちゃんが元気に大きく育ち、舟橋家が更なる幸せで溢れていることを願ってます。<br><br>
+            PS.お父さんに写真を見せたら、お似合いな夫婦だねって言ってたよ。お母さんに写真を見せたら、恭輔はふなっしーみたいな女の子を探しないって言ってたよ笑。<br><br>
+            あおくんより
+        </p>
+
+        <p class="page-number">
+            1 / 4
+        </p>
+        </div>
+    </div>
+
+    <button onclick="showPage(2)">
+        アルバムを開く
+    </button>
+</div>
+
+
+<!-- ページ2 -->
+<div id="page2" class="page" style="display:none">
+
+    <div class="photo-frame">
+        <img src="images/photo1.jpg">
+                <p class="caption">
+            ふなっしーと水緒ちゃん
+        </p>
+
+        <p class="page-number">
+            2 / 4
+        </p>
+    </div>
+
+    <div>
+        <button onclick="showPage(1)">戻る</button>
+        <button onclick="showPage(3)">次へ</button>
+    </div>
+
+</div>
+
+<!-- ページ3 -->
+<div id="page3" class="page" style="display:none">
+
+    <div class="photo-frame">
+        <img src="images/photo2.jpg">
+                <p class="caption">
+            京花さんと水緒ちゃん
+        </p>
+
+        <p class="page-number">
+            3 / 4
+        </p>
+    </div>
+
+    <div>
+        <button onclick="showPage(2)">戻る</button>
+        <button onclick="showPage(4)">次へ</button>
+    </div>
+
+</div>
+
+<!-- ページ4 -->
+<div id="page4" class="page" style="display:none">
+
+    <div class="photo-frame">
+        <img src="images/photo3.jpg">
+        <p class="caption">
+            ふなっしー家
+        </p>
+
+        <p class="page-number">
+            4 / 4
+        </p>
+    </div>
+
+    <div>
+        <button onclick="showPage(3)">戻る</button>
+        <button onclick="showPage(1)">最初へ戻る</button>
+    </div>
+
+</div>
+
+
+
+
+
+<script>
+
+function showPage(pageNumber){
+
+    for(let i=1;i<=4;i++){
+        document.getElementById("page"+i).style.display="none";
+    }
+
+    document.getElementById("page"+pageNumber).style.display="block";
+}
+
+</script>
+
+</body>
+</html>

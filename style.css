@@ -1,0 +1,205 @@
+body{
+    background:
+    linear-gradient(
+        135deg,
+        #f5eee3,
+        #e8dccb
+    );
+}
+
+.page{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:90vh;
+}
+
+.photo-frame{
+
+    background:white;
+
+    position:relative;
+
+    width:90%;
+    max-width:900px;
+    min-height:600px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.2);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.photo-frame::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:20px;
+    bottom:20px;
+
+    width:150px;
+    height:150px;
+
+    background-image:url("images/bird.jpeg;
+
+    background-size:contain;
+    background-repeat:no-repeat;
+
+    opacity:0.12;
+
+    pointer-events:none;
+}
+
+.photo-frame img{
+
+    border-radius:10px;
+
+    border:8px solid white;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,0.15);
+
+    max-width:100%;
+    max-height:450px;
+
+    object-fit:contain;
+}
+
+button{
+
+    background:#8b6b4a;
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    margin:15px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 6px 15px rgba(0,0,0,0.3);
+}
+
+.album-page{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.page-number{
+
+    width:100%;
+
+    text-align:right;
+
+    color:#888;
+
+    margin-top:10px;
+}
+
+.message-frame{
+    position:relative;
+
+    background:white;
+
+    width:80%;
+
+      width:90%;
+    max-width:900px;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:
+
+        0 5px 15px rgba(0,0,0,0.2);
+
+    text-align:left;
+
+    line-height:1.8;
+}
+
+.message-frame::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:20px;
+    bottom:20px;
+
+    width:120px;
+    height:120px;
+
+    background-image:url("images/bird.jpeg");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+
+    opacity:0.10;
+
+    pointer-events:none;
+}
+
+.caption{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    font-size:20px;
+
+    color:#5d4b38;
+
+    font-weight:bold;
+}
+
+h1{
+    color:#8b6b4a;
+    text-align:center;
+
+    font-size:42px;
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#999;
+
+    margin-top:-15px;
+
+    margin-bottom:30px;
+
+    font-size:18px;
+}
