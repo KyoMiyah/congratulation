@@ -1,3 +1,9 @@
+*{
+
+    box-sizing:border-box;
+
+}
+
 body{
     background:
     linear-gradient(
@@ -51,7 +57,7 @@ body{
     width:150px;
     height:150px;
 
-    background-image:url("images/bird.jpeg);
+    background-image:url("images/bird.jpeg");
 
     background-size:contain;
     background-repeat:no-repeat;
@@ -170,7 +176,7 @@ button:hover{
     width:120px;
     height:120px;
 
-    background-image:url("images/momotaro.png");
+    background-image:url("images/bird.jpeg");
 
     background-size:contain;
     background-repeat:no-repeat;
