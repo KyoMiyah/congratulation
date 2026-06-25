@@ -29,9 +29,12 @@ body{
 
     width:90%;
     max-width:900px;
+
     min-height:600px;
 
-    padding:25px;
+    padding:40px;
+
+    overflow:hidden;
 
     border-radius:15px;
 
@@ -42,7 +45,6 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
 }
 
 .photo-frame::after{
@@ -69,10 +71,13 @@ body{
 
 .photo-frame img{
 
-    width:100%;
-    max-width:800px;
+    width:auto;
 
-    height:450px;
+    max-width:100%;
+
+    max-height:420px;
+
+    height:auto;
 
     object-fit:contain;
 
