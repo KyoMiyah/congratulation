@@ -51,7 +51,7 @@ body{
     width:150px;
     height:150px;
 
-    background-image:url("images/bird.jpeg;
+    background-image:url("images/bird.jpeg);
 
     background-size:contain;
     background-repeat:no-repeat;
@@ -63,50 +63,59 @@ body{
 
 .photo-frame img{
 
+    width:100%;
+    max-width:800px;
+
+    height:450px;
+
+    object-fit:contain;
+
     border-radius:10px;
 
     border:8px solid white;
 
     box-shadow:
         0 3px 10px rgba(0,0,0,0.15);
-
-    max-width:100%;
-    max-height:450px;
-
-    object-fit:contain;
 }
 
 button{
 
-    background:#8b6b4a;
+    background:linear-gradient(
+        135deg,
+        #a67c52,
+        #8b6b4a
+    );
+
     color:white;
 
     border:none;
 
-    padding:15px 35px;
+    padding:18px 45px;
 
-    margin:15px;
+    margin:20px 10px;
 
-    font-size:20px;
+    font-size:22px;
 
     font-weight:bold;
 
-    border-radius:12px;
+    border-radius:50px;
 
     cursor:pointer;
 
     box-shadow:
-        0 4px 10px rgba(0,0,0,0.2);
+        0 6px 15px rgba(0,0,0,0.25);
 
-    transition:0.3s;
+    transition:all 0.3s ease;
 }
 
 button:hover{
 
-    transform:translateY(-2px);
+    transform:
+        translateY(-3px)
+        scale(1.03);
 
     box-shadow:
-        0 6px 15px rgba(0,0,0,0.3);
+        0 10px 25px rgba(0,0,0,0.3);
 }
 
 .album-page{
@@ -127,26 +136,46 @@ button:hover{
 }
 
 .message-frame{
+
     position:relative;
 
     background:white;
 
-    width:80%;
-
-      width:90%;
+    width:90%;
     max-width:900px;
+
+    min-height:600px;
 
     padding:40px;
 
     border-radius:15px;
 
     box-shadow:
-
-        0 5px 15px rgba(0,0,0,0.2);
+        0 8px 20px rgba(0,0,0,0.2);
 
     text-align:left;
 
     line-height:1.8;
+}
+
+.message-frame::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:20px;
+    left:20px;
+
+    width:120px;
+    height:120px;
+
+    background-image:url("images/momotaro.png");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+
+    opacity:0.08;
 }
 
 .message-frame::after{
@@ -202,4 +231,41 @@ h1{
     margin-bottom:30px;
 
     font-size:18px;
+}
+
+.button-area{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:20px;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:30px;
+    }
+
+    .caption{
+        font-size:18px;
+    }
+
+    button{
+        font-size:18px;
+        padding:15px 30px;
+    }
+
+    .photo-frame{
+        min-height:auto;
+    }
+
+    .message-frame{
+        min-height:auto;
+    }
 }
